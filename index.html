@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark-mode">
+    <div class="tabs">
+      <button class="tab-btn" onclick="openTab('cipher')">Cipher Tool</button>
+      <button class="tab-btn" onclick="openTab('videos')">Videos</button>
+      <button class="tab-btn" onclick="openTab('discussion')">
+        Discussion Board
+      </button>
+      <button class="tab-btn mode-toggle" onclick="toggleMode()">
+         Dark Mode
+      </button>
+    </div>
+
+    <!-- Cipher Tool Tab -->
+    <div class="tab-content active" id="cipher">
+      <h2>Encryption & Decryption</h2>
+      <input type="text" id="text" placeholder="Enter text" />
+      <input type="number" id="shift" placeholder="Enter shift value" />
+      <br />
+      <button onclick="encryptText()">Encrypt</button>
+      <button onclick="decryptText()">Decrypt</button>
+
+      <h4>Encrypted Text:</h4>
+      <p id="encryptedOutput">-</p>
+
+      <h4>Decrypted Text:</h4>
+      <p id="decryptedOutput">-</p>
+    </div>
+
+    <!-- Videos Tab -->
+
+    <div class="tab-content" id="videos">
+      <h2>Videos on Encryption & Decryption</h2>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LA3fah6i-4A?si=04Hou9Oo-4bXhmDp" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JK3ur6W4rvw?si=iGXYadX54bjUTQlb" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9u6sovgxiH4?si=FgXxvzATOdZwunI0" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FpJSsmQuzJw?si=HtXKQLks1ItrZT83" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    </div>
+
+    <!-- Discussion Board Tab -->
+    <div class="tab-content" id="discussion">
+      <h2>Discussion Board</h2>
+      <h3>Why is encryption important?</h3>
+      <p>
+        Encryption is important because it protects sensitive information from unauthorized access, keeping data secure. 
+        It ensures privacy in communication, preventing hackers or third parties from intercepting personal or confidential messages.
+         Governments, businesses, 
+        and individuals rely on encryption to safeguard financial transactions, personal data, and sensitive information from cyber threats.
+        <br>
+        
+        
+        Encryption plays a vital role in securing different types of IT assets and personally identifiable information (PII). 
+        To this end, encryption serves four essential functions:
+        <br>
+        <br/>
+        Encryption has long been used to protect sensitive information. 
+        Historically, it was used by militaries and governments. In modern times, encryption is used to protect data both at rest and in motion.
+         At-rest data is the type stored on computers and storage devices. In-motion data refers to data in transit between devices and over networks.
+
+         <a
+          href="https://www.techtarget.com/searchsecurity/definition/encryption"
+          target="_blank"
+          >Read more</a
+        >.
+      </p>
+    
+
+      <h3>Can encryption be misused?</h3>
+      <p>
+        Encryption these days presents an uncompromising defense of increasingly higher levels of encryption (i.e.,
+         no access to encrypted information to anybody including companies managing the data,
+         device manufacturers, or even government entities) as the only way in which we can protect ourselves against the unwarranted 
+         invasion of privacy from governments, social media platform providers, and other private companies we engage with. 
+         <br>
+         <br/>
+
+        While motivated by well-documented and repeated cases in which these players have abused their ability to gain access to our 
+        data and use it to their benefit, this approach may end up backfiring because it indirectly and unintentionally facilitates the abuse
+        of encryption
+
+        <a
+        href="https://senzafili.com/on-the-use-and-abuse-of-encryption/?utm_source=chatgpt.com"
+        target="_blank"
+        >Read more</a>
+
+      <h3> -- End-to-end encryption in messaging and its significance--</h3>
+      <p>
+        End-to-end encryption has emerged as a solution to protect the sanctity of these communications. 
+        With this form of encryption, messages are encrypted on the sender's device and only decrypted on the receiver's end. 
+        <a
+          href="https://www.flagright.com/post/encryption-challenges-in-fraud-activities-and-their-solutions"
+          target="_blank"
+          >Read more</a
+        >.
+      
+      </p>
+      
+        
+
+      <h3>Discussion on real-life ethical concerns about encryption</h3>
+      <p>
+        Technology has changed our world. Privacy is important, but so is safety. Finding a balance between them is challenging.  
+        Governments create laws to protect privacy while also making laws to bypass privacy controls for security.
+        Technology and related laws are still developing. 
+        Over time, both will evolve to find a balance between privacy, safety, and ethics worldwide.
+        <br>
+        <br/>
+
+The use of encryption is effective in securing data and helping to protect the privacy of
+information (Santos, Gummadi, Rodrigues, 2009). Encryption is a valuable tool for
+protecting the confidentiality and integrity of information and when applied ethically is used
+to protect information such as personal, financial, and proprietary data. Conversely, it does
+create some challenges when used for unethical and illegal means, such as criminal or
+terrorist activity. An example of this was the case in the 2015 San Bernardino shootings,
+where the terror suspects phone was protected by encryption and law enforcement were not
+initially able to gain access to the phone (Thomas, 2016). More recently, encryption is used to
+conduct ransomware campaigns where threat actors encrypt an organisations data and
+demand money in return for the decryption key. Without the key, decrypting data is
+extremely difficult and time consuming. In addition, there may be safeguards that are
+designed to protect techniques such as guessing the key (brute forcing) such as automatic
+deletion of the data .
+<br>
+<br/>
+Issues could arise when there are conflicts between laws, regulation, and cultural norms. This
+area becomes complex, especially in cross border situations and what one may see as ethical,
+another may not.
+        <a
+          href="https://auscomputerethics.com/wp-content/uploads/2021/03/aice_2020_paper_8.pdf"
+          target="_blank"
+          >Read more</a>.
+      </p>
+      
+        
+      
+
+      <p>Encryption is a necessity; without it, many of the modern technological processes on which we rely would not be possible.
+         Web browsing would be less safe; online shopping would be out of the question. Subscription TV wouldn’t exist. Cryptocurrencies wouldn’t 
+         exist. Encrypted chat wouldn’t exist.
+      We accept that encryption allows users (a user could be an individual or a government) to secure information. 
+      
+
+       <br>
+       <br/>
+        
+        Morally, the right to privacy is a basic human right, and as more of our lives becomes digital,
+         there clearly needs to be a process in place to ensure our privacy in the digital space. Legally, it is more complicated:
+          it is commonly argued that if one user’s right to privacy endangers another user, then it may be acceptable to restrict 
+          or remove the former’s right to privacy, for the good of the latter.
+          <a
+          href="https://bteccomputing.co.uk/legal-and-ethical-issues-around-encryption/"
+          target="_blank"
+          >Read more</a>.
+        </p>
+          
+            
+          
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
